@@ -26,15 +26,15 @@ while userName != usuario or password != contrasenia:
     password = input("Ingrese su contraseña: ")
     print("")
 
-print("+--------------------------------------------+")
-print("|                                            |")
-print("| Distribuidora de huevos mayorista All Eggs |")
-print("|                    S.A                     |")
-print("+--------------------------------------------+")
-print("")
-
 #menu de opciones.
 while bandera == True:
+    print("+--------------------------------------------+")
+    print("|                                            |")
+    print("| Distribuidora de huevos mayorista All Eggs |")
+    print("|                    S.A                     |")
+    print("+--------------------------------------------+")
+    print("")
+    
     print("a.- Asignacion de precios de huevos")
     print("b.- Crear Despacho")
     print("c.- Listar huevos")
@@ -64,7 +64,7 @@ while bandera == True:
                     valorhuevo = int(input("Ingrese el nuevo valor: $"))
                     while valorhuevo < 50:
                         print("El valor no puede ser menor a $50, porfavor ingrese un valor nuevamente")
-                        valorhuevo = int(input("Ingrese el nuevo valor: "))
+                        valorhuevo = int(input("Ingrese el nuevo valor: $"))
                     diccionarioHuevos["huevos de gallina"] = valorhuevo
                     print("El cambio se a echo correctamente")
                     print("Valor de huevos de gallina ahora es:$",diccionarioHuevos["huevos de gallina"])
@@ -76,10 +76,10 @@ while bandera == True:
             #si opcion 2, asignar precio a huevo de pato.       
             elif opcionHuevo == "2":
                 try:
-                    valorhuevo = int(input("Ingrese el nuevo valor: "))
+                    valorhuevo = int(input("Ingrese el nuevo valor: $"))
                     while valorhuevo < 150:
-                        print("El valor no puede ser menor a 150, porfavor ingrese un valor nuevamente")
-                        valorhuevo = int(input("Ingrese el nuevo valor: "))
+                        print("El valor no puede ser menor a $150, porfavor ingrese un valor nuevamente")
+                        valorhuevo = int(input("Ingrese el nuevo valor: $"))
                     diccionarioHuevos["huevos de pato"] = valorhuevo
                     print("El cambio se a echo correctamente")
                     print("Valor de huevos de pato ahora es:$", diccionarioHuevos["huevos de pato"])
@@ -91,10 +91,10 @@ while bandera == True:
             #si opcion 3, asignar precio a huevo de codorniz.        
             elif opcionHuevo == "3":
                 try:
-                    valorhuevo = int(input("Ingrese el nuevo valor: "))
+                    valorhuevo = int(input("Ingrese el nuevo valor: $"))
                     while valorhuevo < 50:
-                        print("El valor no puede ser menor a 50, porfavor ingrese un valor nuevamente")
-                        valorhuevo = int(input("Ingrese el nuevo valor: "))
+                        print("El valor no puede ser menor a $50, porfavor ingrese un valor nuevamente")
+                        valorhuevo = int(input("Ingrese el nuevo valor: $"))
                     diccionarioHuevos["huevos de codorniz"] = valorhuevo
                     print("El cambio se a echo correctamente")
                     print("Valor de huevos de codorniz ahora es:$", diccionarioHuevos["huevos de codorniz"])
@@ -106,10 +106,10 @@ while bandera == True:
             #si opcion 4, asignar precio a huevo de avestruz.
             elif opcionHuevo == "4":
                 try:
-                    valorhuevo = int(input("Ingrese el nuevo valor: "))
+                    valorhuevo = int(input("Ingrese el nuevo valor: $"))
                     while valorhuevo < 800:
-                        print("El valor no puede ser menor a 800, porfavor ingrese un valor nuevamente")
-                        valorhuevo = int(input("Ingrese el nuevo valor: "))
+                        print("El valor no puede ser menor a $800, porfavor ingrese un valor nuevamente")
+                        valorhuevo = int(input("Ingrese el nuevo valor: $"))
                     diccionarioHuevos["huevos de avestruz"] = valorhuevo
                     print("El cambio se a echo correctamente")
                     print("Valor de huevos de avestruz ahora es:$", diccionarioHuevos["huevos de avestruz"])
